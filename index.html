@@ -1,0 +1,106 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>タイピング練習</title>
+
+	<!-- <script type="text/javascript" src="jquery-1.11.3.min.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="main.js" charset="UTF-8"></script>
+
+	<!-- 問題のデータはテキストで用意。最終行は改行しない。-->
+
+</head>
+<style type="text/css">
+	body button {
+		font-size: 16px;
+	}
+
+	p {
+		margin-left: 30px;
+	}
+
+	#sample {
+		font-size: 300%;
+		width: 800px;
+		height: 100px;
+		margin-left: 20px;
+	}
+
+	#input {
+		font-size: 300%;
+		width: 800px;
+		height: 100px;
+		margin-left: 20px;
+	}
+
+	#debug {
+		font-size: 200%;
+		width: 800px;
+		height: 100px;
+		margin-left: 20px;
+	}
+
+	#free {
+		font-size: 300%;
+		width: 800px;
+		height: 100px;
+		margin-left: 20px;
+	}
+
+	#input2 {
+		font-size: 300%;
+		width: 800px;
+		height: 100px;
+		margin-left: 20px;
+	}
+
+	#title {
+		font-size: 200%;
+	}
+
+	#user_man {
+		font-size: 50%;
+	}
+</style>
+</head>
+
+<body>
+	<p id="title">タイピング練習（親指シフト用）</p>
+	<p id=user_man>問題語句は「<a href="http://nicola.sunicom.co.jp/olddoc/nicolaha.html#S3">ＮＩＣＯＬＡ派宣言</a>」より引用しました。</p>
+	<p>
+		ブラウザのセキュリティ制限により、ローカルで直接開いても動かないことがあります<br>
+		その場合はWebサーバー上で実行してください
+	</p>
+
+	　
+	<button id="Lesson3">頻出語句</button>
+	<button id="Lesson4">ホームポジション</button>
+	<button id="Lesson5">右手打鍵</button>
+	<button id="Lesson6">左手打鍵</button>
+	<button id="Lesson7">濁音</button>
+	<button id="Lesson8">半濁音</button>
+	<button id="Lesson9">総合</button>
+	　<button id="Original_Lesson">ユーザー定義</button><br>
+	<p id=user_man>ユーザー定義ファイルはHTMLと同じフォルダに"user.txt"として保存。1行1問。UTF-8。最終行には改行を入れないこと。
+	</p>
+	<br>
+
+	<textarea id="sample" readonly></textarea>
+	<textarea id="input"></textarea>
+
+	<!-- <textarea id="debug"></textarea> -->
+	<br>
+	<br>
+
+<p>自由入力練習（上段に入れた文をひたすら繰り返し練習できる）</p> 
+
+	<textarea id="free"></textarea>
+	<textarea id="input2"></textarea>
+
+
+</body>
+
+</html>
